@@ -7,6 +7,7 @@
   -ms-backgroudn-attachment: fixed;
   background-attachment: fixed;
   background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./ZdjeciaPortfolio/mainPhoto.jpg'',    sizingMethod='scale')";
 }
 
 .mainSection__introduce {
