@@ -2,6 +2,9 @@
   height: 85vh;
   background-image: url("./ZdjeciaPortfolio/mainPhoto.jpg");
   background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
   background-attachment: fixed;
 }
 
