@@ -1,0 +1,205 @@
+.myProjectsSection {
+  width: 100%;
+  background-color: rgba(231, 231, 231, 0.3);
+}
+
+.myProjectsSection .backgroundWord {
+  font-size: 54px;
+  overflow: hidden;
+  position: absolute;
+  left: 5vw;
+  font-weight: bold;
+  margin: 1vh 0;
+  z-index: -1;
+  color: lightgrey;
+  opacity: .5;
+}
+
+@media (min-width: 420px) {
+  .myProjectsSection .backgroundWord {
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .myProjectsSection .backgroundWord {
+    left: 10vw;
+  }
+}
+
+@media (min-width: 1500px) {
+  .myProjectsSection .backgroundWord {
+    left: 15vw;
+  }
+}
+
+@media (min-width: 1650px) {
+  .myProjectsSection .backgroundWord {
+    left: 20vw;
+  }
+}
+
+.myProjectsSection .myProjects {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .myProjectsSection .myProjects {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
+
+.myProjectsSection .myProjects__header h1 {
+  font-size: 44px;
+  margin: 0;
+  padding: 5vh 5vw 0 5vw;
+  color: #000;
+}
+
+.myProjectsSection .myProjects__header h3 {
+  margin: 0;
+  padding: 0 5vw;
+  color: #515769;
+}
+
+.myProjectsSection .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4vh 0;
+}
+
+.myProjectsSection .projects .project {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+@media (min-width: 769px) {
+  .myProjectsSection .projects .project {
+    width: 45%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 10px 0;
+  }
+}
+
+.myProjectsSection .projects .project:nth-child(even) {
+  background-color: white;
+}
+
+@media (min-width: 769px) {
+  .myProjectsSection .projects .project:nth-child(odd) {
+    background-color: white;
+  }
+}
+
+.myProjectsSection .projects .project__image {
+  width: 100px;
+  padding: 5px;
+}
+
+@media (min-width: 530px) {
+  .myProjectsSection .projects .project__image {
+    width: 200px;
+  }
+}
+
+@media (min-width: 769px) {
+  .myProjectsSection .projects .project__image {
+    width: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .myProjectsSection .projects .project__image {
+    width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .myProjectsSection .projects .project .weatherProject {
+    width: 180px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .myProjectsSection .projects .project .weatherProject {
+    width: 150px;
+  }
+}
+
+.myProjectsSection .projects .project__description {
+  display: block;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.myProjectsSection .projects .project__description h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+@media (min-width: 530px) {
+  .myProjectsSection .projects .project__description h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .myProjectsSection .projects .project__description h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .myProjectsSection .projects .project__description h1 {
+    font-size: 2rem;
+  }
+}
+
+.myProjectsSection .projects .project__description p {
+  margin: 0;
+  padding: 5px 0;
+  font-size: .8rem;
+}
+
+@media (min-width: 530px) {
+  .myProjectsSection .projects .project__description p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .myProjectsSection .projects .project__description p {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .myProjectsSection .projects .project__description p {
+    font-size: 1rem;
+  }
+}
+
+.myProjectsSection .projects .project__description .technologies {
+  border-top: 1px solid black;
+}
+
+.myProjectsSection .projects .githubInformation {
+  padding: 0 25px;
+  text-align: center;
+}
+/*# sourceMappingURL=myProjects.css.map */
