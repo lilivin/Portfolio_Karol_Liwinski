@@ -1,17 +1,10 @@
 .mainSection {
     height: 85vh;
     background-image: url('./ZdjeciaPortfolio/mainPhoto.jpg');
-    -webkit-background-attachment: fixed;
-    -moz-background-attachment: fixed;
-    -o-background-attachment: fixed;
-    -ms-backgroudn-attachment: fixed;
-    background-attachment: fixed;
-
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./ZdjeciaPortfolio/mainPhoto.jpg'',    sizingMethod='scale')";
     &__introduce{
         color: white;
         text-shadow: 1px 1px #000000;
