@@ -1,5 +1,6 @@
 .mainSection {
   height: 85vh;
+  min-height: 100%;
   background-image: url("./ZdjeciaPortfolio/mainPhoto.jpg");
   background-size: cover;
 }
