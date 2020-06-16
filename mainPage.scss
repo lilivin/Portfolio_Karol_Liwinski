@@ -1,11 +1,16 @@
 .mainSection {
     height: 85vh;
     background-image: url('./ZdjeciaPortfolio/mainPhoto.jpg');
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    -ms-backgroudn-attachment: fixed;
     background-attachment: fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     &__introduce{
         color: white;
         text-shadow: 1px 1px #000000;
