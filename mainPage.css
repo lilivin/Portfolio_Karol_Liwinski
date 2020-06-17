@@ -1,7 +1,11 @@
+html {
+  min-height: 100%;
+  background: transparent;
+}
+
 .mainSection {
   height: 85vh;
   background-image: url("./ZdjeciaPortfolio/mainPhoto.jpg");
-  background-attachment: fixed;
   background-size: cover;
 }
 
