@@ -1,11 +1,12 @@
 .mainSection {
-    background: url('./ZdjeciaPortfolio/mainPhoto.jpg') no-repeat center center fixed;
+    height: 85vh;
+    max-width: 100%;
+    background-image: url('./ZdjeciaPortfolio/mainPhoto.jpg');
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    overflow: hidden;
     &__introduce{
         color: white;
         text-shadow: 1px 1px #000000;
