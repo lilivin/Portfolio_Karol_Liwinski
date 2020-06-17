@@ -1,8 +1,8 @@
 .mainSection {
-  background: url("./ZdjeciaPortfolio/mainPhoto.jpg") no-repeat center center fixed;
+  height: 85vh;
+  background-image: url("./ZdjeciaPortfolio/mainPhoto.jpg");
+  background-attachment: fixed;
   background-size: cover;
-  height: 100%;
-  overflow: hidden;
 }
 
 .mainSection__introduce {
