@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/0233149bfc.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="aboutMe.css">
@@ -41,12 +42,12 @@
     <section id="sectionAboutMe" class="aboutMeSection">
         <div class="aboutMe">
             <p class="backgroundWord">About Me</p>
-            <div class="aboutMe__header">
+            <div class="aboutMe__header" data-aos="fade-right">
                 <h1>About Me</h1>
                 <h3>What I am all about</h3>
             </div>
         </div>
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo minima. Deserunt tenetur numquam
+        <p class="description" data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo minima. Deserunt tenetur numquam
             voluptate illo a similique praesentium aspernatur eius odit dolores, ut ullam nesciunt illum error sunt
             quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ab sint explicabo hic excepturi, eos
             delectus est quidem asperiores repudiandae deserunt dicta. Aliquid iure ducimus nemo, porro nostrum natus
@@ -58,53 +59,56 @@
         </p>
         <div class="mySkills">
             <p class="backgroundWord">My Skills</p>
-            <div class="aboutMe__header">
+            <div class="aboutMe__header" data-aos="fade-right">
                 <h1>My Skills</h1>
                 <h3>What I can</h3>
             </div>
         </div>
-        <div class="frontend">
-            <h1>Front-end</h1>
-            <div class="skills">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>SASS</p>
-                <p>React</p>
-                <p>Styled-components</p>
-                <p>Hooks</p>
-                <p>Bootstrap</p>
-                <p>RWD</p>
+        <div data-aos="fade-left">
+            <div class="frontend">
+                <h1>Front-end</h1>
+                <div class="skills">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>SASS</p>
+                    <p>React</p>
+                    <p>Styled-components</p>
+                    <p>Hooks</p>
+                    <p>Bootstrap</p>
+                    <p>RWD</p>
+                </div>
+            </div>
+            <div class="backend">
+                <h1>Back-end</h1>
+                <div class="skills">
+                    <p>Basics Pyhon</p>
+                    <p>Basics PHP</p>
+                    <p>Basics SQL</p>
+                </div>
+            </div>
+            <div class="otherSkills">
+                <h1>Other Skills</h1>
+                <div class="skills">
+                    <p>English - B2</p>
+                    <p>Figma</p>
+                    <p>Gimp</p>
+                    <p>BEM</p>
+                </div>
             </div>
         </div>
-        <div class="backend">
-            <h1>Back-end</h1>
-            <div class="skills">
-                <p>Basics Pyhon</p>
-                <p>Basics PHP</p>
-                <p>Basics SQL</p>
-            </div>
-        </div>
-        <div class="otherSkills">
-            <h1>Other Skills</h1>
-            <div class="skills">
-                <p>English - B2</p>
-                <p>Figma</p>
-                <p>Gimp</p>
-                <p>BEM</p>
-            </div>
-        </div>
+       
     </section>
     <section id="sectionMyProjects" class="myProjectsSection">
         <div class="myProjects">
             <p class="backgroundWord">My Projects</p>
-            <div class="myProjects__header">
+            <div class="myProjects__header" data-aos="fade-right">
                 <h1>My Projects</h1>
                 <h3>I build the real value</h3>
             </div>
         </div>
         <div class="projects">
-            <div class="project">
+            <div class="project" data-aos="fade-right">
                 <img class="project__image" src="./ZdjeciaPortfolio/undraw_breakfast_psiw.svg" alt="Santos" />
                 <div class="project__description">
                     <h1>Santos</h1>
@@ -112,7 +116,7 @@
                     <p class="technologies"><b>Technologie: </b>React, React Router, SCSS</p>
                 </div>
             </div>
-            <div class="project">
+            <div class="project" data-aos="fade-left">
                 <div class="project__description">
                     <h1>SneakShop</h1>
                     <p>Projekt sklepu internetowego z obuwiem. Wiecej tekstu troche, zeby zjechało</p>
@@ -120,7 +124,7 @@
                 </div>
                 <img class="project__image" src="./ZdjeciaPortfolio/undraw_web_shopping_dd4l.svg" alt="SneakShop" />
             </div>
-            <div class="project">
+            <div class="project" data-aos="fade-right">
                 <img class="project__image" src="./ZdjeciaPortfolio/undraw_data_reports_706v.svg" alt="ExpenseTracker" />
                 <div class="project__description">
                     <h1>Expense Tracker</h1>
@@ -128,7 +132,7 @@
                     <p class="technologies"><b>Technologie: </b>React, React Hooks, Styled Components</p>
                 </div>
             </div>
-            <div class="project">
+            <div class="project" data-aos="fade-left">
                 <div class="project__description">
                     <h1>About Us</h1>
                     <p>Gra towarzyska w całości mojego autorstwa. Wiecej tekstu troche, zeby zjechało</p>
@@ -136,7 +140,7 @@
                 </div>
                 <img class="project__image" src="./ZdjeciaPortfolio/undraw_push_notifications_im0o.svg" alt="AboutUs" />
             </div>
-            <div class="project">
+            <div class="project" data-aos="fade-right">
                 <img class="project__image" src="./ZdjeciaPortfolio/undraw_weather_notification_4sbo.svg" alt="WeatherApp" />
                 <div class="project__description">
                     <h1>Weather App</h1>
@@ -144,7 +148,7 @@
                     <p class="technologies"><b>Technologie: </b>React.js, CSS</p>
                 </div>
             </div>
-            <div class="project">
+            <div class="project" data-aos="fade-left">
                 <div class="project__description">
                     <h1>Tinder Bot</h1>
                     <p>Bot logujący się na Tindera i losowo przesuwająca osoby w prawo lub lewo.</p>
@@ -152,7 +156,7 @@
                 </div>
                 <img class="project__image" src="./ZdjeciaPortfolio/undraw_share_766i.svg" alt="WeatherApp" />
             </div>
-            <div class="project">
+            <div class="project" data-aos="fade-right">
                 <img class="project__image" src="./ZdjeciaPortfolio/undraw_social_sharing_ibwq.svg" alt="WeatherApp" />
                 <div class="project__description">
                     <h1>Twitter bot</h1>
@@ -160,7 +164,7 @@
                     <p class="technologies"><b>Technologie: </b>Python, Selenium</p>
                 </div>
             </div>
-            <div class="project">
+            <div class="project" data-aos="fade-left">
                 <div class="project__description">
                     <h1>Instagram Bot</h1>
                     <p>Bot logujący się na Tindera i losowo przesuwająca osoby w prawo lub lewo.</p>
@@ -168,18 +172,18 @@
                 </div>
                 <img class="project__image" src="./ZdjeciaPortfolio/undraw_web_search_eetr.svg" alt="WeatherApp" />
             </div>
-            <p class="githubInformation">If you would like to check my other works, here is my <b>Github Page</b>.</p>
+            <p class="githubInformation" data-aos="fade-up">If you would like to check my other works, here is my <b>Github Page</b>.</p>
         </div>
     </section>
     <section id="sectionContact" class="contactSection">
         <div class="contact">
             <p class="backgroundWord">Contact</p>
-            <div class="contact__header">
+            <div class="contact__header" data-aos="fade-right">
                 <h1>Contact</h1>
                 <h3>Hire me</h3>
             </div>
         </div>
-        <div class="contactWays">
+        <div class="contactWays" data-aos="fade-left">
             <div class="contactWay">
                 <h1><i class="far fa-envelope-open"></i> Email:</h1>
                 <p>k.liwinski@gmail.com</p>
@@ -211,6 +215,14 @@
         <p>MADE WITH ❤️ BY KAROL LIWIŃSKI</p>
         <p>© 2020 ALL RIGHTS RESERVED</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        offset: 200,
+        delay: 0,
+        duration: 1000
+      });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./navigation.js"></script>
 </body>
