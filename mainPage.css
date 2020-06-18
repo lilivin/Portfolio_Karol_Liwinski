@@ -2,6 +2,8 @@
   height: 85vh;
   background-image: url("./ZdjeciaPortfolio/mainPhoto.jpg");
   background-size: cover !important;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .mainSection__introduce {
