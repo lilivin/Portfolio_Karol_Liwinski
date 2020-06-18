@@ -7,13 +7,13 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/0233149bfc.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mainPage.css">
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="aboutMe.css">
     <link rel="stylesheet" href="myProjects.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="footerSection.css">
+    <link rel="stylesheet" href="mainPage.css">
 </head>
 
 <body>
@@ -25,21 +25,20 @@
         </button>
         <div class="navigation">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="">English <i class="fas fa-language"></i></a></li>
-                <li class="navigation__item"><a href="./sprzet/index.html">Sprzęt</a></li>
-                <li class="navigation__item"><a href="./galeria/index.html">Galeria</a></li>
-                <li class="navigation__item"><a href="./onas/index.html">O nas</a></li>
-                <li class="navigation__item"><a href="./kontakt/index.html">Kontakt</a></li>
+                <li class="sectionMainSite">Main Site</li>
+                <li class="sectionAboutMe">About Me</li>
+                <li class="sectionMyProjects">My Projects</li>
+                <li class="sectionContact">Contact</li>
             </ul>
         </div>
     </nav>
-    <section class="mainSection">
+    <section id="sectionMainSite" class="mainSection">
         <div class="mainSection__introduce">
             <h1 class="name">Karol<br />Liwiński</h1>
             <h3 class="job">Front-end Developer</h3>
         </div>
     </section>
-    <section class="aboutMeSection">
+    <section id="sectionAboutMe" class="aboutMeSection">
         <div class="aboutMe">
             <p class="backgroundWord">About Me</p>
             <div class="aboutMe__header">
@@ -96,7 +95,7 @@
             </div>
         </div>
     </section>
-    <section class="myProjectsSection">
+    <section id="sectionMyProjects" class="myProjectsSection">
         <div class="myProjects">
             <p class="backgroundWord">My Projects</p>
             <div class="myProjects__header">
@@ -172,7 +171,7 @@
             <p class="githubInformation">If you would like to check my other works, here is my <b>Github Page</b>.</p>
         </div>
     </section>
-    <section class="contactSection">
+    <section id="sectionContact" class="contactSection">
         <div class="contact">
             <p class="backgroundWord">Contact</p>
             <div class="contact__header">
@@ -212,6 +211,8 @@
         <p>MADE WITH ❤️ BY KAROL LIWIŃSKI</p>
         <p>© 2020 ALL RIGHTS RESERVED</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./navigation.js"></script>
 </body>
 
 </html>
