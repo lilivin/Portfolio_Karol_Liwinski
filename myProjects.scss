@@ -49,13 +49,13 @@
     .projects{
         display: flex;
         flex-wrap: wrap;
+        flex-grow: 1;
         justify-content: space-evenly;
         max-width: 1280px;
         margin: 0 auto;
         padding: 4vh 0;
-        .project{
+        .singleProject{
             width: 95%;
-            display: flex;
             margin: 20px auto;
             border-radius: 20px;
             @media(min-width: 769px){
@@ -71,69 +71,96 @@
                     background-color: white;
                 }
             }
-            &__image{
-                width: 100px;
-                padding: 5px;
-                @media(min-width: 530px){
-                    width: 200px;
-                }
-                @media(min-width: 769px){
+            .project{
+                display: flex;
+                &__image{
                     width: 100px;
-                }
-                @media(min-width: 1024px){
-                    width: 200px;
-                }
-            }
-
-            .weatherProject{
-                @media(min-width:768px){
-                    width: 180px;
-                }
-                @media(min-width: 1024px){
-                    width: 150px;
-                }
-            }
-
-            &__description{
-                display: block;
-                margin: auto;
-                padding: 0 10px;
-                h1{
-                    font-size: 1.4rem;
-                    margin: 0;
+                    padding: 5px;
                     @media(min-width: 530px){
-                        font-size: 2rem;
+                        width: 200px;
                     }
                     @media(min-width: 769px){
+                        width: 100px;
+                    }
+                    @media(min-width: 1024px){
+                        width: 200px;
+                    }
+                }
+    
+                .weatherProject{
+                    @media(min-width:768px){
+                        width: 180px;
+                    }
+                    @media(min-width: 1024px){
+                        width: 150px;
+                    }
+                }
+    
+                &__description{
+                    display: block;
+                    margin: auto;
+                    padding: 0 10px;
+                    h1{
                         font-size: 1.4rem;
+                        margin: 0;
+                        @media(min-width: 530px){
+                            font-size: 2rem;
+                        }
+                        @media(min-width: 769px){
+                            font-size: 1.4rem;
+                        }
+                        @media(min-width: 1024px){
+                           font-size: 2rem;
+                        }
                     }
-                    @media(min-width: 1024px){
-                       font-size: 2rem;
-                    }
-                }
-                p{
-                    margin: 0;
-                    padding: 5px 0;
-                    font-size: .8rem;
-                    @media(min-width: 530px){
-                        font-size: 1.3rem;
-                    }
-                    @media(min-width: 769px){
+                    p{
+                        margin: 0;
+                        padding: 5px 0;
                         font-size: .8rem;
+                        @media(min-width: 530px){
+                            font-size: 1.3rem;
+                        }
+                        @media(min-width: 769px){
+                            font-size: .8rem;
+                        }
+                        @media(min-width: 1024px){
+                            font-size: 1rem;
+                         }
                     }
-                    @media(min-width: 1024px){
-                        font-size: 1rem;
-                     }
-                }
-                .technologies{
-                    border-top: 1px solid black;
+                    .technologies{
+                        border-top: 1px solid black;
+                    }
                 }
             }
-            
+            .buttons {
+                display: flex;
+                justify-content: space-evenly;
+                margin: 10px 0;
+                a{
+                    color: black;
+                    text-decoration: none;
+                    padding: 5px 30px;
+                    border: 1px solid black;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    transition: .3s;
+                    &:hover{
+                        background-color: rgb(224, 224, 224);
+                        font-weight: bold;
+                        transform: scale(1.2);;
+                    }
+                }
+            }
         }
+        
         .githubInformation{
             padding: 0 25px;
             text-align: center;
+            a{
+                color: black;
+                font-weight: bold;
+                text-decoration: none;
+            }
         }
     }
 }

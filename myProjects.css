@@ -71,6 +71,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -79,17 +82,14 @@
   padding: 4vh 0;
 }
 
-.myProjectsSection .projects .project {
+.myProjectsSection .projects .singleProject {
   width: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 20px auto;
   border-radius: 20px;
 }
 
 @media (min-width: 769px) {
-  .myProjectsSection .projects .project {
+  .myProjectsSection .projects .singleProject {
     width: 45%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -98,110 +98,150 @@
   }
 }
 
-.myProjectsSection .projects .project:nth-child(even) {
+.myProjectsSection .projects .singleProject:nth-child(even) {
   background-color: white;
 }
 
 @media (min-width: 769px) {
-  .myProjectsSection .projects .project:nth-child(odd) {
+  .myProjectsSection .projects .singleProject:nth-child(odd) {
     background-color: white;
   }
 }
 
-.myProjectsSection .projects .project__image {
+.myProjectsSection .projects .singleProject .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.myProjectsSection .projects .singleProject .project__image {
   width: 100px;
   padding: 5px;
 }
 
 @media (min-width: 530px) {
-  .myProjectsSection .projects .project__image {
+  .myProjectsSection .projects .singleProject .project__image {
     width: 200px;
   }
 }
 
 @media (min-width: 769px) {
-  .myProjectsSection .projects .project__image {
+  .myProjectsSection .projects .singleProject .project__image {
     width: 100px;
   }
 }
 
 @media (min-width: 1024px) {
-  .myProjectsSection .projects .project__image {
+  .myProjectsSection .projects .singleProject .project__image {
     width: 200px;
   }
 }
 
 @media (min-width: 768px) {
-  .myProjectsSection .projects .project .weatherProject {
+  .myProjectsSection .projects .singleProject .project .weatherProject {
     width: 180px;
   }
 }
 
 @media (min-width: 1024px) {
-  .myProjectsSection .projects .project .weatherProject {
+  .myProjectsSection .projects .singleProject .project .weatherProject {
     width: 150px;
   }
 }
 
-.myProjectsSection .projects .project__description {
+.myProjectsSection .projects .singleProject .project__description {
   display: block;
   margin: auto;
   padding: 0 10px;
 }
 
-.myProjectsSection .projects .project__description h1 {
+.myProjectsSection .projects .singleProject .project__description h1 {
   font-size: 1.4rem;
   margin: 0;
 }
 
 @media (min-width: 530px) {
-  .myProjectsSection .projects .project__description h1 {
+  .myProjectsSection .projects .singleProject .project__description h1 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 769px) {
-  .myProjectsSection .projects .project__description h1 {
+  .myProjectsSection .projects .singleProject .project__description h1 {
     font-size: 1.4rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .myProjectsSection .projects .project__description h1 {
+  .myProjectsSection .projects .singleProject .project__description h1 {
     font-size: 2rem;
   }
 }
 
-.myProjectsSection .projects .project__description p {
+.myProjectsSection .projects .singleProject .project__description p {
   margin: 0;
   padding: 5px 0;
   font-size: .8rem;
 }
 
 @media (min-width: 530px) {
-  .myProjectsSection .projects .project__description p {
+  .myProjectsSection .projects .singleProject .project__description p {
     font-size: 1.3rem;
   }
 }
 
 @media (min-width: 769px) {
-  .myProjectsSection .projects .project__description p {
+  .myProjectsSection .projects .singleProject .project__description p {
     font-size: .8rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .myProjectsSection .projects .project__description p {
+  .myProjectsSection .projects .singleProject .project__description p {
     font-size: 1rem;
   }
 }
 
-.myProjectsSection .projects .project__description .technologies {
+.myProjectsSection .projects .singleProject .project__description .technologies {
   border-top: 1px solid black;
+}
+
+.myProjectsSection .projects .singleProject .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 10px 0;
+}
+
+.myProjectsSection .projects .singleProject .buttons a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.myProjectsSection .projects .singleProject .buttons a:hover {
+  background-color: #e0e0e0;
+  font-weight: bold;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .myProjectsSection .projects .githubInformation {
   padding: 0 25px;
   text-align: center;
+}
+
+.myProjectsSection .projects .githubInformation a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
 /*# sourceMappingURL=myProjects.css.map */
