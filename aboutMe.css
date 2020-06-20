@@ -70,6 +70,11 @@
   }
 }
 
+.aboutMeSection .description a {
+  color: black;
+  text-decoration: none;
+}
+
 .aboutMeSection .frontend, .aboutMeSection .backend, .aboutMeSection .otherSkills {
   padding: 0 5vw;
   -ms-grid-column: 2;

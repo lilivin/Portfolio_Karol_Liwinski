@@ -38,6 +38,10 @@
   background: #fff;
   border: 0;
   margin: 0;
+  &:focus{
+    outline: none;
+    box-shadow: none;
+  }
   @media(min-width: 400px){
     height: 15vw;
     width: 15vw;
@@ -145,10 +149,35 @@
       text-align: center;
       display: block;
       padding: 0;
-      li{
-        padding: 15px 10px;
-        border-bottom: 1px solid lightgrey;
-        cursor: pointer;
+      .navigationPart{
+        margin: 50px 0;
+        @media(min-width: 769px){
+          margin: 100px 0;
+        }
+        &__socials{
+          li{
+            padding: 15px 10px;
+            cursor: pointer;
+            a{
+              color: black;
+              text-decoration: none;
+              font-size: 1rem;
+              i{
+                padding: 0;
+                margin: 0;
+              }
+              p{
+                padding: 0;
+                margin: 0;
+              }
+            }
+          }
+        }
+        li{
+          padding: 15px 10px;
+          border-bottom: 1px solid lightgrey;
+          cursor: pointer;
+        }
       }
     }
   }
