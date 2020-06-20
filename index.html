@@ -15,9 +15,13 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="footerSection.css">
     <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="loader.css">
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <nav id="main_menu">
         <button class="hamburger">
             <span class="hamburger__box">
@@ -296,6 +300,11 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./navigation.js"></script>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>
