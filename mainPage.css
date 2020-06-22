@@ -3,6 +3,9 @@
   background-image: url("./ZdjeciaPortfolio/mainPhoto.jpg");
   background-size: cover;
   max-width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-attachment: fixed;
   overflow-x: hidden;
 }
 
