@@ -1,0 +1,49 @@
+.mainSection {
+  height: 85vh;
+  background-image: url("./Photos/mainPhoto.jpg");
+  background-size: cover;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.mainSection__introduce {
+  color: white;
+  text-shadow: 1px 1px #000000;
+  position: absolute;
+  top: 30vh;
+  left: 5vw;
+}
+
+@media (min-width: 1024px) {
+  .mainSection__introduce {
+    left: 65vw;
+  }
+}
+
+.mainSection__introduce .name {
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  line-height: 45px;
+}
+
+@media (min-width: 768px) {
+  .mainSection__introduce .name {
+    font-size: 5rem;
+    line-height: 70px;
+  }
+}
+
+.mainSection__introduce .job {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 15px 0;
+}
+
+@media (min-width: 768px) {
+  .mainSection__introduce .job {
+    font-size: 2rem;
+    line-height: 70px;
+  }
+}
+/*# sourceMappingURL=mainPage.css.map */
