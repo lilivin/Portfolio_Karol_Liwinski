@@ -1,7 +1,8 @@
 .loader-wrapper {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
   z-index: 100000;
   top: 0;
   left: 0;
